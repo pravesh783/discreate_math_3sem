@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[10],b[10],i,m,n,j;
+ clrscr();
+ printf("\nEnter the number of elements in first set:");
+ scanf("%d",&m);
+ printf("\nEnter the elements:");
+ for(i=0;i<m;i++)
+ {
+  scanf("%d",&a[i]);
+ }
+ printf("\nEnter the number of elements in second set:");
+ scanf("%d",&n);
+printf("enter the elements ");
+for(i=0;i<m;i++)
+ {
+  scanf("%d",&b[i]);
+ }
+ printf("CARTESIAN PRODUCT OF SET 1 AND SET 2\n");
+ printf("{\n");
+ for(i=0;i<m;i++)
+ for(j=0;j<n;j++)
+ {
+ printf("(%d ,%d)",a[i],b[j]);
+ printf(",");
+ }
+ printf("\n}");
+ getch();
+ }

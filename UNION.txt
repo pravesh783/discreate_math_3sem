@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+void Union(int set1[10],int set2[10],int m,int n);
+void main()
+{
+ int a[10],b[10],m,n,i,j;
+ clrscr();
+ printf("\nEnter the number of elements in first set:");
+ scanf("%d",&m);
+ printf("\n Enter the elements:");
+ for(i=0;i<m;i++)
+  scanf("%d",&a[i]);
+ printf("\nEnter the number of elements in second set:");
+ scanf("%d",&n);
+ printf("\nEnter the elements:");
+ for(i=0;i<n;i++)
+  scanf("%d",&b[i]);
+
+ Union(a,b,m,n);
+ getch();
+ }
+
+  void Union(int a[10],int b[10],int m,int n)
+{
+ int c[20],i,j,k=0,flag=0;
+ for(i=0;i<m;i++)
+ {
+  c[k]=a[i];
+  k++;
+ }
+ for(i=0;i<n;i++)
+ {
+  flag=0;
+  for(j=0;j<m;j++)
+  {
+   if(b[i]==c[j])
+   {
+    flag=1;
+    break;
+   }
+  }
+  if(flag==0)
+  {
+   c[k]=b[i];
+   k++;
+  }
+
+}printf("UNION OF TWO SET IS :");
+ for(i=0;i<k;i++)
+ {
+  printf("\t%d",c[i]);
+ }
+ }
