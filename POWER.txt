@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void printpowerset(char *set,int set_size)
+{
+int pow_set_size=pow(2,set_size);
+int counter ,j,i;
+for(counter =0;counter<pow_set_size;counter++)
+{
+for(j=0;j<set_size;j++)
+{
+if(counter&(i<<j))
+printf("%c",set[j]);
+printf("\n");
+}
+}}
+void main()
+{ int j=3;
+char set[]={'a','b','c'};
+printpowerset(set,j);
+getch();
+}

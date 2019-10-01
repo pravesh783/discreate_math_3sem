@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b;
+clrscr();
+printf("enter the first binary no: ");
+scanf("%d",&a);
+printf("enter the second binary no :");
+scanf("%d",&b);
+if(a==1&&b==1)
+printf("AND gate of these no is 1");
+else
+printf("AND gate of these no is  0");
+getch();
+}

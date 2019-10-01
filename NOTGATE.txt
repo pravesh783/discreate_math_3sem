@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a;
+clrscr();
+printf("enter the  binary no: ");
+scanf("%d",&a);
+if(a==1)
+printf("NOT gate of %d is 0",a);
+else
+printf("NOT gate of %d is 1",a);
+getch();
+}
